@@ -18,7 +18,7 @@ const PasswordReset = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:3001/api/v1/auth/resetpassword/${token}`,
+        `https://password-reset-3kti.onrender.com/api/v1/auth/resetpassword/${token}`,
         {
           newPassword,
         }

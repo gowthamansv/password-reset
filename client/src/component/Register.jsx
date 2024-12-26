@@ -18,7 +18,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/v1/auth/register",
+        "https://password-reset-3kti.onrender.com/api/v1/auth/register",
         { name, email, password, role },
         { withCredentials: true }
       );

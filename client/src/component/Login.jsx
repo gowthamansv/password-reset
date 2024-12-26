@@ -10,14 +10,17 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3001/api/v1/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        withCredentials: true,
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+        "https://password-reset-3kti.onrender.com/api/v1/auth/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          withCredentials: true,
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
       const data = await response.json();
 

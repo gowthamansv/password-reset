@@ -18,7 +18,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3001/api/v1/auth/userdetails",
+          "https://password-reset-3kti.onrender.com/api/v1/auth/userdetails",
           {
             headers: {
               Authorization: `Bearer ${token}`, // Include token in Authorization header

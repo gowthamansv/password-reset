@@ -11,7 +11,7 @@ const Logout = () => {
       try {
         // Call the backend logout endpoint
         await axios.post(
-          "http://localhost:3001/api/v1/auth/logout",
+          "https://password-reset-3kti.onrender.com/api/v1/auth/logout",
           {},
           { withCredentials: true } // Include cookies in the request
         );
