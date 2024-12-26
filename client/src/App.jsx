@@ -5,7 +5,7 @@ import ForgotPassword from "./component/ForgotPassword.jsx";
 import PasswordReset from "./component/PasswordReset.jsx";
 import "./App.css";
 import Dashboard from "./component/Dashboard.jsx";
-import Login from "./component/login.jsx";
+import Login from "./component/Login.jsx";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Logout from "./component/Logout.jsx";
