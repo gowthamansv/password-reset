@@ -103,7 +103,7 @@ const authController = {
       user.resetTokenExpiry = Date.now() + 3600000; // valid for 1 hour
       await user.save();
 
-      const resetLink = `http://localhost:5173/resetpassword/${resetToken}`;
+      const resetLink = `https://password-reset-03.netlify.app/resetpassword/${resetToken}`;
 
       // Use sendEmail utility
       await sendEmail(email, resetLink);

@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "https://password-reset-03.netlify.app/", // Frontend URL
     credentials: true,
   })
 );

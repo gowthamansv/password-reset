@@ -7,7 +7,7 @@ mongoose
   .then(() => {
     console.log("connected to the database");
     app.listen(3001, () => {
-      console.log("Server is running @ http://localhost:3001");
+      console.log("Server is running @ http://localhost:3001 hi");
     });
   })
   .catch((error) => {
