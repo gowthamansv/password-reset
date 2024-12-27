@@ -5,10 +5,17 @@ const cors = require("cors");
 
 const app = express();
 app.use(express.json());
+const allowedOrigins = ["https://password-reset-03.netlify.app"];
 app.use(
   cors({
-    origin: "https://password-reset-03.netlify.app/", // Frontend URL
-    credentials: true,
+    origin: function (origin, callback) {
+      if (allowedOrigins.includes(origin) || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true, // Allow cookies or other credentials
   })
 );
 app.use(cookieParser());
